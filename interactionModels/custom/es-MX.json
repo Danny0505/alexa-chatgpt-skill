@@ -1,0 +1,44 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "chat skynet",
+            "intents": [
+                {
+                    "name": "OpenAIIntent",
+                    "slots": [
+                        {
+                            "name": "pregunta",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "cual es tu {pregunta}",
+                        "dime sobre {pregunta}",
+                        "puedes responder {pregunta}",
+                        "que sabes sobre {pregunta}",
+                        "me gustaria saber {pregunta}",
+                        "que opinas sobre {pregunta}",
+                        "{pregunta} por favor"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
